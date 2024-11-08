@@ -26,4 +26,4 @@ El objetivo de este proyecto es demostrar el uso de propiedades de CSS como `dis
 
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   https://github.com/alexto777/modelo-caja.git
