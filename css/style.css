@@ -10,50 +10,32 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: "Playwrite GB S", Arial, Helvetica, sans-serif;
+.container {
+    height: 400px;
+    background-color: black;
+    /* propiedades flex */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    align-content: space-between;
+    gap: 5px;
+    /* padding: 0 15px; */
+    margin: 0 15px;
 }
 
-header, footer {
-    text-align: center;
-    background-color: #002e8b;
-    color: white;
+.caja {
+    background-color: cyan;
+    width: 100px;
+    /* height: 200px; */
+    padding: 10px;
+    /* margin: 0 1rem; */
 }
 
-main {
-    text-align: center;
-}
-
-.columna {
-    display: inline-block;
-    width: 30%;
-    height: auto;
-    background-color: #f3f3f3;
-    vertical-align: top;
-}
-
-img {
-    display: block;
-    width: 100%;
-}
-
-.columna p {
-    margin: 20px;
-    padding: 20px;
-}
-
-.columna a {
-    /* display: none; */
-    color: #292929;
-    text-decoration: none;
-    /* border */
-    /* Modelo de caja */
-    background-color: #002e8b;
-    font-size: larger;
-    color: white;
-}
-
-footer {
-    height: 50px;
-    vertical-align: auto;
+.portafolio {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
