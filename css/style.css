@@ -31,6 +31,8 @@ body {
     /* height: 200px; */
     padding: 10px;
     /* margin: 0 1rem; */
+    /* flex item */
+    display: flex;
 }
 
 .portafolio {
