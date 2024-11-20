@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables del proyecto */
+:root {
+    --primary-color: #006c6c;
+    --secondary-color: #ed8300;
+    --content-color: #1d1d1d;
+    --background-color: #a4a4a4;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--content-color);
+    margin: 10px;
+}
+
+/* Perfil */
+.profile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px;
+    text-align: center;
+    position: relative;
+}
+
+/* Pseudoelemento de profile */
+.profile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 6px;
+    background: var(--secondary-color);
+    border-radius: 15px;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+p.contenido {
+    font-size: 1rem;
+    color: var(--primary-color);
+    /* font-weight: bolder; */
+    margin-bottom: 10px;
+}
+
+.contenido::first-letter {
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.contenido::after {
+    content: "🚀";
+
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid darkcyan;
+    font-weight: 600;
+}
+
+.button:hover {
+    color: var(--primary-color);
+    background-color: white;
+    border: 2px solid darkcyan;
+}
+

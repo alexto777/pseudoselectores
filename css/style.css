@@ -10,34 +10,62 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    height: 400px;
-    background-color: black;
-    /* propiedades flex */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    /* align-items: center; */
-    align-content: space-between;
-    gap: 5px;
-    /* padding: 0 15px; */
-    margin: 0 15px;
+h1 {
+    margin: 20px;
 }
 
-.caja {
-    background-color: cyan;
-    width: 100px;
-    /* height: 200px; */
-    padding: 10px;
-    /* margin: 0 1rem; */
-    /* flex item */
-    display: flex;
+a {
+    background-color: darkcyan;
+    color: white;
+    margin: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-.portafolio {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: column;
+/* Pseudoclase del selector <a> :link , :visited, :hover y :active*/
+
+a:hover {
+    background-color: orangered;
+    color: black;
+    border: black solid 3px;
+}
+
+a:link {
+    background-color: blue;
+}
+
+a:visited {
+    background-color: aqua;
+    color: black;
+}
+
+a:active {
+    background-color: palevioletred;
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: pink;
+}
+
+/* .circulo:hover {
+    background-color: aqua;
+    border-radius: 100%;
+    border: black solid 3px;
+
+} */
+
+/* Pseudoelementos */
+
+div::before {
+    content: "Se muestra al principio";
+    color: red;
+}
+   
+div::after {
+    content: "Se muestra al final";
+    color: blue;
 }
