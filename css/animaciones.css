@@ -1,0 +1,41 @@
+.circulo {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    box-shadow: 0 4px 8px black;
+    border-radius: 100%;
+    /* Transicion 3 paso*/
+    transition-property: background-color;
+    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(0.82, -0.24, 0.13, 1.08);
+}
+
+.circulo:hover {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    box-shadow: 0 4px 18px black;
+    transform: translateX(20px);
+    /* opacity: 25%; */
+}
+
+/* Efecto fantasma con keyframes */
+
+.ghost {
+    width: 200px;
+    height: auto;
+    /* animacion */
+    animation: ghost 3s infinite ease-in-out;
+}
+
+/* Keyframes */
+@keyframes ghost {
+    0%,100% {
+        opacity: 0;
+        transform: scale(0.8) translateY(50px);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
